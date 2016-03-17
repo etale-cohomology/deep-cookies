@@ -4,7 +4,7 @@
 
 Currently Unicorns only admits a CPU backend. Future versions are expected to support GPUs, through the PyCUDA interface.
 
-Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com) [Mocha](https://github.com/pluskid/Mocha.jl)
+Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha](https://github.com/pluskid/Mocha.jl)
 
 ### Performance
 
@@ -62,10 +62,8 @@ Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com) [Mocha]
 
 ### Requirements
 
-Python 3.x
-NumPy
-Matplotlib (optional, visualization)
-Vispy (optional, GPU-accelerated visualization)
+Python 3.x  
+NumPy  
 
 ### Source style
 
