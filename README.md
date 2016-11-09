@@ -4,7 +4,7 @@
 
 It's __goals__ are:
 
-1. To illustrate the main ideas from __first principles__. The sole "black box" is [matrix multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication), but most (all?) NumPy backends use the `O**3` algorithm anyways!
+1. To illustrate the main ideas from __first principles__. The sole "black box" is [matrix multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication), but most (all?) NumPy backends use the `O(n**3)` algorithm anyways!
 1. To be modular
 1. To be barebones
 1. To be hackable
