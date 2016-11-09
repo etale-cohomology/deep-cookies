@@ -1,10 +1,10 @@
 ![DeepUnicorns](deepunicorns.png)
 
-**DeepUnicorns** is a Python implementation of various **deep learning** algorithms. It can build [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) that are [modular](https://en.wikipedia.org/wiki/Modularity) in _layers_, _activation functions_, and _cost functions_ (aka _loss functions_).
+**DeepUnicorns** is a Python implementation of various **deep learning** algorithms. It can build [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) that are [modular](https://en.wikipedia.org/wiki/Modularity) in _layers_, _activation functions_, and _cost functions_ (aka. _loss functions_).
 
 Its __goals__ are:
 
-1. To illustrate the main ideas from __first principles__. The sole "black box" is [matrix multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication), but most (all?) NumPy backends use the `O(n**3)` algorithm anyways!
+1. To illustrate the main ideas from [first principles](http://jamesclear.com/first-principles). The sole "black box" is [matrix multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication), but most (all?) NumPy backends use the `O(n**3)` algorithm anyways!
 1. To be modular
 1. To be barebones
 1. To be hackable
