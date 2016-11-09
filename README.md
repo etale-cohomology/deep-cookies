@@ -30,7 +30,7 @@ __CIFAR-10__
 
 _\*Timings correspond to a 14-core Xeon Haswell @ 2.2 GHz_
 
-## Supported functions/layers
+## Supported layers/functions
 
 __Layers__
 
