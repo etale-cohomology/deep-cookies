@@ -17,16 +17,22 @@ Unicorns only admits a CPU backend.
 Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha](https://github.com/pluskid/Mocha.jl)
 
 
-### Performance
+## Performance
 
-**MNIST:** Unicorns gets 3% error in 10 epochs (6 seconds on a 14-core CPU @ 2.2 GHz) with 50 hidden units (1 hidden layer), and 1.5% error in 20 epochs (20 seconds) with 200 hidden units (1 hidden layer).
+__MNIST__
 
-**CIFAR-10:** TODO!
+- __3% error__ in 10 epochs (__6 seconds__\*) with 50 hidden units (1 hidden layer)
+- __1.5% error__ in 20 epochs (__20 seconds__\*) with 200 hidden units (1 hidden layer)
 
+__CIFAR-10__
 
-### Supported functions/layers
+- TODO!
 
-**Layers**
+_\*Timings correspond to a 14-core Xeon Haswell @ 2.2 GHz_
+
+## Supported functions/layers
+
+__Layers__
 
 1. Perceptron layer (aka. inner product layer, fully connected layer)
 1. Softmax loss layer
@@ -34,7 +40,7 @@ Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha
 1. Pooling layer — TODO!
 1. Autoencoder layer — TODO!
 
-**Activation functions**
+__Activation functions__
 
 1. ReLU
 1. Leaky ReLU
@@ -42,15 +48,15 @@ Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha
 1. Sigmoid
 1. Tanh
 
-**Cost functions**
+__Cost functions__
 
 1. Cross-entropy
-2. Mean squares
+1. Mean squares
 
 
-### Examples
+## Examples
 
-**Minimal example: 2-layer fully connected feedforward net**
+__Minimal example: 2-layer fully connected feedforward net (aka. multi-layer perceptron__
 
     # Before running this snippet, download and unzip mnist.7z to the same folder as your script
 
@@ -70,13 +76,13 @@ Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha
     net.train(imgs=mnist_imgs, labels=mnist_labels)
 
 
-### Requirements
+## Dependencies
 
 Python 3.x  
-NumPy (even better if it's compiled against [MKL](https://software.intel.com/en-us/articles/numpyscipy-with-intel-mkl)!)
+NumPy (even better if it's compiled against [MKL](https://software.intel.com/en-us/articles/numpyscipy-with-intel-mkl))
 
 
-### Source style
+## Source style
 
 Code uses 99-character lines to allow for expressive variable names  
 Each line of code is intended to contain a single atomic idea (the Raymond Hettinger rule!)
