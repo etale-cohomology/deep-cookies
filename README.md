@@ -1,41 +1,51 @@
-# Unicorns v0.0.1
+![DeepUnicorns](deepunicorns.png)
 
-**Unicorns** is a Python implementation of various **deep learning** algorithms. It can build neural networks that are modular in *layers*, *activation functions*, and *cost functions*. It is intended to illustrate the main ideas from first principles (its sole "black box" being matrix multiplication), as a companion to a series of upcoming tutorials. After having a firm grasp of the primitives, thoough, people should move on to the highly optimized libraries (eg. [Theano](https://github.com/Theano/Theano), [Caffe](https://github.com/BVLC/caffe), [cuDNN](https://github.com/hannes-brt/cudnn-python-wrappers)).
+**DeepUnicorns** is a Python implementation of various **deep learning** algorithms. It can build [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) that are [modular](https://en.wikipedia.org/wiki/Modularity) in _layers_, _activation functions_, and _cost functions_ (aka _loss functions_).
 
-Currently Unicorns only admits a CPU backend. Future versions are expected to support GPUs, through the PyCUDA interface.
+It's __goals__ are:
+1. To illustrate the main ideas from __first principles__. The sole "black box" is [matrix multiplication](https://en.wikipedia.org/wiki/Matrix_multiplication), but most (all?) NumPy backends use the `O**3` algorithm anyways!
+1. To be modular
+1. To be barebones
+1. To be hackable
+1. To be fast (rather, as fast as possible on a CPU!)
+
+After having a firm grasp of the primitives, people should move on to the highly optimized libraries (eg. [Theano](https://github.com/Theano/Theano), [Caffe](https://github.com/BVLC/caffe), [cuDNN](https://github.com/hannes-brt/cudnn-python-wrappers)).
+
+Unicorns only admits a CPU backend.
 
 Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha](https://github.com/pluskid/Mocha.jl)
+
 
 ### Performance
 
 **MNIST:** Unicorns gets 3% error in 10 epochs (6 seconds on a 14-core CPU @ 2.2 GHz) with 50 hidden units (1 hidden layer), and 1.5% error in 20 epochs (20 seconds) with 200 hidden units (1 hidden layer).
 
-**CIFAR-10:** Coming soon
+**CIFAR-10:** TODO!
+
 
 ### Supported functions/layers
 
 **Layers**
 
 1. Perceptron layer (aka. inner product layer, fully connected layer)
-2. Softmax loss layer
-3. Convolution layer — COMING SOON!
-4. Polling layer — COMING SOON!
-4. Autoencoder layer — COMING SOON!
+1. Softmax loss layer
+1. Convolution layer — TODO!
+1. Pooling layer — TODO!
+1. Autoencoder layer — TODO!
 
 **Activation functions**
 
 1. ReLU
-2. Leaky ReLU
-3. Parametric ReLU — COMING SOON!
-4. Softplus
-5. Sigmoid
-6. Tanh
-7. Kumaraswamy — COMING SOON!
+1. Leaky ReLU
+1. Softplus
+1. Sigmoid
+1. Tanh
 
 **Cost functions**
 
 1. Cross-entropy
 2. Mean squares
+
 
 ### Examples
 
@@ -59,11 +69,11 @@ Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha
     net.train(imgs=mnist_imgs, labels=mnist_labels)
 
 
-
 ### Requirements
 
 Python 3.x  
-NumPy  
+NumPy (even better if it's compiled against [MKL](https://software.intel.com/en-us/articles/numpyscipy-with-intel-mkl)!)
+
 
 ### Source style
 
