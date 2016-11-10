@@ -58,22 +58,24 @@ __Cost functions__
 
 __Minimal example: 2-layer fully connected feedforward net (aka. multi-layer perceptron__
 
-    # Before running this snippet, download and unzip mnist.7z to the same folder as your script
+```python
+# Before running this snippet, download and unzip mnist.7z to the same folder as your script
 
-    # Load digits and set data type
-    mnist_imgs, mnist_labels = load_ndarray('mnist.npy')
+# Load digits and set data type
+mnist_imgs, mnist_labels = load_ndarray('mnist.npy')
 
-    # Initialize layers
-    fc0 = PerceptronLayer(neurons=784)
-    fc1 = PerceptronLayer(neurons=50)
-    loss = SoftmaxLossLayer(neurons=10)
-    layers = [fc0, fc1, loss]
+# Initialize layers
+fc0 = PerceptronLayer(neurons=784)
+fc1 = PerceptronLayer(neurons=50)
+loss = SoftmaxLossLayer(neurons=10)
+layers = [fc0, fc1, loss]
 
-    # Initialize net
-    net = Net(layers=layers)
+# Initialize net
+net = Net(layers=layers)
 
-    # Train net
-    net.train(imgs=mnist_imgs, labels=mnist_labels)
+# Train net
+net.train(imgs=mnist_imgs, labels=mnist_labels)
+```
 
 
 ## Dependencies
