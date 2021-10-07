@@ -1,6 +1,4 @@
-![DeepUnicorns](deepunicorns.png)
-
-**DeepUnicorns** is a Python implementation of various **deep learning** algorithms. It can build [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) that are [modular](https://en.wikipedia.org/wiki/Modularity) in _layers_, _activation functions_, and _cost functions_ (aka. _loss functions_).
+**DeepCookies** is a Python implementation of various **deep learning** algorithms. It can build [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network) that are [modular](https://en.wikipedia.org/wiki/Modularity) in _layers_, _activation functions_, and _cost functions_ (aka. _loss functions_).
 
 Its __goals__ are:
 
@@ -12,7 +10,7 @@ Its __goals__ are:
 
 After having a firm grasp of the primitives, people should move on to the highly optimized libraries (eg. [Theano](https://github.com/Theano/Theano), [Caffe](https://github.com/BVLC/caffe), [cuDNN](https://github.com/hannes-brt/cudnn-python-wrappers)).
 
-Unicorns only admits a CPU backend.
+DeepCookies only admits a CPU backend.
 
 Inspired by: [Michael Nielsen](http://neuralnetworksanddeeplearning.com), [Mocha](https://github.com/pluskid/Mocha.jl)
 
